@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+}
+
+p {
+  /*line-height: 1.6;*/
+}
+/*header and nav*/
+.ph-header-container {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 100%;
+}
+.ph-header-image,
+.ph-header-link {
+  display: block;
+}
+
+.ph-header-container a,
+.ph-header-container a:hover,
+.ph-header-container a:active,
+.ph-header-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+/*.ph-header-image {
+  height: 55px;
+  margin-right: 25px;
+}*/
+.ph-header-link {
+  padding: 0 10px;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+.ph-header-left,
+.ph-header-right {
+  align-items: center;
+  display: flex;
+}
+
+/* Hero section */
+.ph-hero-container {
+  background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+  background-size: cover;
+  background-position: 30% 0%;
+  margin: 0 auto;
+  height: 600px;
+  /*border: 3px yellowgreen solid;*/
+}
+
+/*@media (min-width: 800px) and (max-width: 1250px) {
+  .ph-hero-container {
+    background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+    background-size: cover;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .ph-hero-container {
+    background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+    background-size: cover;
+    height: 500px;
+    margin: 0 auto;
+    max-width: 1250px;
+
+}*/
+/*.hero-img-container {
+  display: ;
+  width: 100%;
+  border: 3px pink solid;
+}*/
+
+.hero-title-top {
+  max-width: 700px;
+  position: absolute;
+  top: 220px;
+  left: 58%;
+}
+.hero-title-bottom {
+  position: absolute;
+  left: 65%;
+  top: 450px;
+  max-width: 590px;
+  margin-right: 10px;
+}
+
+/*Why ESA middle section*/
+.ph-middle-section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-section-facts {
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cuddle-icon {
+  width: 20%;
+  margin-right: 50px;
+}
+.facts-text {
+  width: 100%;
+}
+.middle-section-facts h1 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
+}
+.middle-section-facts p {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+/*what are the benefits?*/
+.ph-benefits-color-block {
+  height: 260px;
+  width: 100%;
+  background-color: rgba(4, 165, 157, 0.3);
+  padding: 50px 0px;
+}
+.ph-benefits-title {
+  padding: 10px 30px;
+  text-align: center;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 30px;
+}
+.benefits-icons {
+  display: flex;
+  width: 80%;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translate(12%);
+}
+
+/*esa covid article and facts*/
+.ph-covid-section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.covid-section-facts {
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cuddle-icon-2 {
+  width: 30%;
+  margin-right: 10px;
+}
+.covid-text {
+  width: 100%;
+}
+.covid-section-facts h1 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+}
+.covid-section-facts span {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+.covid-section-facts p {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}

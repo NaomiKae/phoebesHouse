@@ -1,0 +1,481 @@
+body {
+  margin: 0;
+}
+
+p {
+  /*line-height: 1.6;*/
+}
+/*header and nav*/
+.ph-header-container {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 100%;
+}
+.ph-header-left img {
+  display: flex;
+  max-width: 22%;
+  position: relative;
+  top: 66px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  .ph-header-left img {
+    max-width: 22%;
+    min-width: 140px;
+    position: relative;
+    top: 55px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ph-header-left img {
+    max-width: 300px;
+    min-width: 140px;
+    position: relative;
+    top: 85px;
+  }
+}
+
+.ph-header-container a,
+.ph-header-container a:hover,
+.ph-header-container a:active,
+.ph-header-container a:visited {
+  color: white;
+  text-decoration: none;
+}
+/*.ph-header-image {
+  height: 55px;
+  margin-right: 25px;
+}*/
+.ph-header-link {
+  display: block;
+  padding: 0 10px;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  max-width: 200px;
+}
+.ph-header-link a:first-child {
+  margin-left: 50px;
+}
+.ph-header-left,
+.ph-header-right {
+  align-items: center;
+  display: flex;
+}
+
+.ph-header-left {
+  margin-left: 3px;
+}
+.ph-header-right {
+  margin-left: 3px;
+  max-width: 600px;
+}
+
+/* Hero section */
+.ph-hero-container {
+  background-image: url("https://assets.codepen.io/4730679/AdobeStock_272480227.jpeg");
+  background-size: cover;
+  background-position: 30% 0%;
+  margin: 0 auto;
+  height: 600px;
+  /*border: 3px yellowgreen solid;*/
+}
+
+/*@media (min-width: 800px) and (max-width: 1250px) {
+  .ph-hero-container {
+    background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+    background-size: cover;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .ph-hero-container {
+    background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+    background-size: cover;
+    height: 500px;
+    margin: 0 auto;
+    max-width: 1250px;
+
+}*/
+/*.hero-img-container {
+  display: ;
+  width: 100%;
+  border: 3px pink solid;
+}*/
+
+.hero-title-top {
+  max-width: 500px;
+  position: absolute;
+  top: 220px;
+  left: 58%;
+  animation: enterTop 3s 2 alternate;
+  animation-delay: 3s;
+  opacity: 0;
+}
+@keyframes enterTop {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-25px);
+    opacity: 1;
+  }
+}
+
+.hero-title-bottom {
+  position: absolute;
+  left: 65%;
+  top: 450px;
+  max-width: 590px;
+  margin-right: 10px;
+  animation: enterBottom 3.5s 2 alternate;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+@keyframes enterBottom {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-25px);
+    opacity: 1;
+  }
+}
+.into-text {
+  max-width: 700px;
+  position: absolute;
+  top: 230px;
+  left: 58%;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+
+  animation: intro-text 4s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+  opacity: 0;
+}
+@keyframes intro-text {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-25px);
+    opacity: 1;
+  }
+}
+.into-text button {
+  max-width: 320px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  transform: translateX(50%);
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.ph-middle-section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle-section-facts {
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cuddle-icon {
+  width: 20%;
+  margin-right: 50px;
+  animation: bounce 1.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.05, 0.05, 0.05, 0.05);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+.facts-text {
+  width: 100%;
+}
+.middle-section-facts h1 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
+}
+.middle-section-facts p {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+/*what are the benefits?*/
+.ph-benefits-color-block {
+  height: ;
+  width: 100%;
+  background-color: rgba(4, 165, 157, 0.3);
+  padding: 50px 0px;
+}
+.ph-benefits-title {
+  padding: 10px 30px;
+  text-align: center;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.row {
+  margin: 10px 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-md-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  border-radius: 100%;
+  height: 9rem;
+  max-width: 9rem;
+  border: 4px solid pink;
+  z-index: 0;
+}
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.text:hover {
+}
+.hide {
+  display: none;
+  position: relative;
+  bottom: 14rem;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  width: 22rem;
+  border-radius: 15px;
+  background-color: rgba(255, 195, 0);
+  opacity: 1;
+  color: white;
+  z-index: 2;
+}
+
+.hideFirst {
+  display: none;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  width: 20rem;
+  position: relative;
+  bottom: 10rem;
+  border-radius: 15px;
+  background-color: rgba(255, 195, 0);
+  opacity: 1;
+  color: white;
+  z-index: 2;
+}
+.hideLast {
+  display: none;
+  position: relative;
+  bottom: 14rem;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  width: 28rem;
+  border-radius: 15px;
+  background-color: rgba(255, 195, 0);
+  opacity: 1;
+  color: white;
+  z-index: 2;
+}
+/*.myDIV {
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+  border: 4px blue solid;
+  width: 3rem;
+}*/
+.myDIV:hover + .hide {
+  display: block;
+  color: white;
+  width: 20rem;
+  height: 16rem;
+  padding: 20px 10px 20px 20px;
+  z-index: 2;
+}
+.myDIV:hover + .hideFirst {
+  display: block;
+  color: white;
+  width: 20rem;
+  height: 8rem;
+  padding: 20px 10px 20px 20px;
+  z-index: 2;
+}
+
+.myDIV:hover + .hideLast {
+  display: block;
+  color: white;
+  width: 24rem;
+  height: 18rem;
+  padding: 20px 10px 20px 20px;
+  z-index: 2;
+}
+
+/*esa covid article and facts*/
+.ph-covid-section {
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.covid-section-facts {
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cuddle-icon-2 {
+  width: 30%;
+  margin-right: 10px;
+  animation: bounce 1.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.05, 0.05, 0.05, 0.05);
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+.covid-text {
+  width: 100%;
+}
+.covid-section-facts h1 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+}
+.covid-section-facts span {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+.covid-section-facts a,
+.covid-section-facts a:hover,
+.covid-section-facts a:active,
+.covid-section-facts a:visited {
+  color: black;
+  text-decoration: none;
+}
+.covid-section-facts p {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.bottom-ad {
+  margin: 0;
+  position: relative;
+  background-color: black;
+}
+
+.bottom-ad img {
+  width: 100%;
+  z-index: -4;
+}
+
+.aspca-logo {
+  display: ;
+  position: absolute;
+  bottom: 50px;
+  left: 60%;
+  max-width: 20%;
+  z-index: 2;
+}
+.ph-footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 100%;
+}
+.ph-footer-link {
+  display: block;
+  padding: 0 10px;
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.ph-footer a,
+.ph-header a:hover,
+.ph-header a:active,
+.ph-header a:visited {
+  color: white;
+  text-decoration: none;
+}
+.ph-footer-link img {
+  width: 200px;
+}

@@ -28,6 +28,30 @@ p {
   color: white;
   text-decoration: none;
 }
+.ph-header-left img {
+  display: flex;
+  max-width: 22%;
+  position: relative;
+  top: 66px;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+  .ph-header-left img {
+    max-width: 22%;
+    min-width: 140px;
+    position: relative;
+    top: 55px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ph-header-left img {
+    max-width: 300px;
+    min-width: 140px;
+    position: relative;
+    top: 85px;
+  }
+}
 /*.ph-header-image {
   height: 55px;
   margin-right: 25px;
@@ -47,7 +71,7 @@ p {
 
 /* Hero section */
 .ph-hero-container {
-  background-image: url("https://assets.codepen.io/4730679/Asset+6.png");
+  background-image: url("/img/girlHugDogHero.jpeg");
   background-size: cover;
   background-position: 30% 0%;
   margin: 0 auto;
